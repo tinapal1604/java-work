@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans 	xmlns="http://www.springframework.org/schema/beans"
+		xmlns:context="http://www.springframework.org/schema/context"
+		xmlns:p="http://www.springframework.org/schema/p"
+		xmlns:c="http://www.springframework.org/schema/c"
+    	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+    						http://www.springframework.org/schema/beans/spring-beans.xsd
+    						http://www.springframework.org/schema/context 
+    						http://www.springframework.org/schema/context/spring-context.xsd"
+>
+
+<context:annotation-config />
+
+<!-- <bean class="org.spring.autowiring.Company" name="obj" >
+<property name="employeeId" value="1000"/>
+<property name="companyName" value="IBM"/>
+</bean>
+
+<bean class="org.spring.autowiring.Employee" name="emp" autowire="byName">
+<property name="name" value="Ram Singh"/>
+</bean> -->
+
+<bean class="org.spring.autowiring.Book" name="book">
+<property name="title" value="Autobiography of a Yogi" />
+<property name="author" value="Paramahansa Yogananda"/>
+</bean>
+
+<bean class="org.spring.autowiring.Book" name="book2">
+<property name="title" value="The Alchemist" />
+<property name="author" value="Paulo Coelho"/>
+</bean>
+
+<bean class="org.spring.autowiring.Library" name="lib"></bean>
+
+</beans>
